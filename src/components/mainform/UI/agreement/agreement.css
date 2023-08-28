@@ -1,0 +1,39 @@
+.form-consent-layer {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(202, 162, 29);
+    padding: 10px;
+}
+.form-consent-checkbox {
+    accent-color: #0e76a8;
+    width: 30px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 740px) {
+    .form-consent-layer {
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(202, 162, 29);
+        padding: 10px;
+        text-align:justify;
+    }
+    .form-consent-checkbox {
+        width: 45px;
+        margin-left: 15px;
+    }
+  }

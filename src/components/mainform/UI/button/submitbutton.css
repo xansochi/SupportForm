@@ -1,0 +1,18 @@
+.mainform-button{
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgb(240, 240, 240);
+    background-color: #0e76a8;
+}
+.mainform-button:hover {
+    background-color: #1393ce;
+}
+.mainform-button:disabled{
+    height: 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    color: rgb(94, 93, 93);
+    background-color: #dadadd;
+    cursor:not-allowed;
+}

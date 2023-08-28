@@ -1,0 +1,9 @@
+.footer-main {
+    height: 20px;
+    width: 100%;
+    position: fixed;
+    bottom:0px;
+    background-color: #0e76a8;
+    color: aliceblue;
+
+}

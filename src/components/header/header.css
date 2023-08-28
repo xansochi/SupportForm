@@ -1,0 +1,43 @@
+.header-main {
+    position: relative;
+    background-color: transparent;
+    height: 50px;
+    color: rgb(1, 31, 56);
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 7px 12px -6px #d7d8da;
+}
+/* .header-line {
+    position: absolute;
+    top:93%;
+    width: 99%;
+    border: none;
+    background-color: #cacaca69;
+    color: #1393ce69;
+    height: 2px;
+    z-index: 1;
+} */
+.header-main-logo {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30px;
+    height: 40px;
+    background:url("/azure.svg") no-repeat 99%;
+    background-size: 100%;
+}
+.header-main-usericon {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 30px;
+    height: 40px;
+    background:url("/vite.svg") no-repeat 99%;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 740px) {
+
+  }

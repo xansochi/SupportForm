@@ -1,0 +1,11 @@
+.form-message {
+    border-color: rgb(161, 161, 161);
+    border-radius: 4px;
+    border-style:solid;
+    resize: none;
+    height: 70px;
+    padding: 5px;
+}
+.form-message:placeholder-shown {
+    text-align: center;
+  }

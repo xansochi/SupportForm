@@ -1,0 +1,171 @@
+/*main div block*/
+
+.form-namelayer {
+    display: flex;
+    justify-content: space-between;
+}
+.form-emaillayer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-namelayer-text {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.contact-textinput-label {
+    display: flex;
+    position: relative;
+    width: 290px;
+  }
+
+/* icon block */
+
+.contact-form-icon {
+    background-color:transparent;
+    color:#4d4c4c;
+    position: absolute;
+    right: 6.5px;
+    top: 6px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+  }
+
+/* place holder animate block*/
+
+  .contactform-textinput {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style:solid;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+    width: 98%;
+    height: 20px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+  }
+/* hide arrow in input */
+    .contactform-textinput[type='number'] {
+      -moz-appearance:textfield;
+  }
+  
+    .contactform-textinput::-webkit-outer-spin-button,
+    .contactform-textinput::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+      
+    /* .contactform-textinput:focus {
+      border: thin solid #32cd32;
+      background-color:#fff;
+        } */
+    
+  .contactform-textinput-label {
+    display: flex;
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 9px;
+    transition: 0.1s;
+    font-size: 14px;
+  }
+
+  .contactform-textinput:focus ~ .contactform-textinput-label,
+  .contactform-textinput:valid ~ .contactform-textinput-label {
+    top: -7px;
+    left: 15px;
+    font-size: small;
+    color: #0e76a8;
+    background-color:#fff;
+    padding:0 5px 0 5px;
+  }
+
+    .contactform-textinput:invalid:not(:placeholder-shown) {
+    border-color: rgb(177, 21, 21);
+    }
+    .contactform-textinput:valid:not(:placeholder-shown) {
+    border-color: rgb(15, 168, 15);
+    }
+    .contactform-textinput:invalid:not(:placeholder-shown):not(:focus) {border: red}
+
+/* email input */
+  .contactform-textinput-email {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style:solid;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+    width: 98%;
+    height: 20px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+  }
+/* email input color*/
+  .contactform-textinput-email:invalid:not(:placeholder-shown) {
+    border-color: rgb(177, 21, 21);
+    }
+  .contactform-textinput-email:valid {
+  border-width: 1px;
+  border-color: rgb(15, 168, 15);
+
+  }
+  .contactform-textinput-email:focus ~ .contactform-textinput-label,
+  .contactform-textinput-email:valid ~ .contactform-textinput-label {
+    top: -7px;
+    left: 15px;
+    font-size: small;
+    color: #0e76a8;
+    background-color:#fff;
+    padding:0 5px 0 5px;
+  }
+    /* .contactform-textinput-email:invalid ~ .contactform-textinput-label {
+      top: -7px;
+      left: 15px;
+      font-size: small;
+      color: #0e76a8;
+      background-color:#fff;
+      padding:0 5px 0 5px;
+    } */
+
+    /* .contactform-textinput-email:not(:focus):not(:placeholder-shown) ~ .contactform-textinput-label {
+      display: flex;
+      color: #999;
+      position: absolute;
+      pointer-events: none;
+      left: 10px;
+      top: 9px;
+      transition: 0.1s;
+      font-size: 14px;
+    } */
+
+    @media screen and (max-width: 740px) {
+    .form-emaillayer {
+        display: flex;
+        gap:6px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .form-namelayer {
+      gap:6px;
+  }
+    .form-namelayer-text {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .contact-textinput-label {
+        display: flex;
+        position: relative;
+        width: 340px;
+      }
+    .contact-form-icon {
+        background-color:transparent;
+        color:#4d4c4c;
+        position: absolute;
+        right: 3px;
+        top: 7px;
+        width: 18px;
+        height: 18px;
+        z-index: 1;
+      }
+    }

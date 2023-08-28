@@ -1,0 +1,84 @@
+.form-datalayer-block {
+    margin-top: 10px;
+}
+.form-datalayer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-datainput {
+    color:rgb(83, 83, 83);
+    width: 280px;
+    padding: 5px;
+    background:url("/date3.png") no-repeat 99%;
+    background-size: 8%;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style:solid;
+}
+.form-datainput:hover {
+    filter:grayscale(50%);
+}
+.datainput-layer {
+    position: relative;
+}
+.datainput-begin {
+   position: absolute;
+   font-size: 15px;
+   background-color: #ffffff;
+   top: -11px;
+   left: 38%
+}
+.datainput-end {
+    position: absolute;
+    font-size: 15px;
+    background-color: #ffffff;
+    top: -11px;
+    left: 38%
+}
+.form-checkbox-layer {
+    accent-color: #0e76a8;
+    margin-right: 5px;
+    margin-left:5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.form-datalayer-text {
+    text-align: center;
+}
+.form-checkbox-text {
+    font-size: 13px;
+}
+input[type=datetime-local]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+/* input[type=datetime-local]{
+	background:url("../images/icon_calendar.svg") no-repeat 90% 50%;
+} */
+
+@media screen and (max-width: 740px) {
+    .form-datalayer {
+        flex-direction: column;
+        gap:10px;
+    }
+    .form-datainput {
+        width: 328px;
+        background-size: 6%;
+    }
+    .datainput-begin {
+        position: absolute;
+        font-size: 14px;
+        background-color: #ffffff;
+        top: -9px;
+        left: 145px;
+     }
+     .datainput-end {
+        position: absolute;
+        font-size: 14px;
+        background-color: #ffffff;
+        top: -9px;
+        left: 135px;
+    }
+  }

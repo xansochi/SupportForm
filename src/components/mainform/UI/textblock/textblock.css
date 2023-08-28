@@ -1,0 +1,133 @@
+.mainform-warning {
+    position: relative;
+    height: 44px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-self: center;
+    width: 700px;
+    background-color: rgb(255, 230, 87);
+    border-radius: 6px;
+    color: rgb(58, 58, 58);
+    text-align:justify;
+    z-index: 10;
+}
+.mainform-warningtext {
+    margin-top: 10px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-color: rgb(243, 207, 0);
+    border-style:solid;
+    align-self: center;
+    width: 690px;
+    border-radius: 4px;
+    color: rgb(58, 58, 58);
+    background-color: rgb(255, 255, 255);
+    /* z-index: 10; */
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.mobile-warningtext-header {
+    padding-top: 10px;
+    text-align: center;
+}
+.mainform-list {
+    font-size: 14px;
+    padding: 5px;
+    list-style-type:circle;
+}
+.mainform-collapsebutton {
+    background-color: rgb(255, 255, 255);    background-color: rgb(253, 253, 253);
+    cursor: pointer;
+    color:rgb(173, 148, 7);
+    left: 350px;
+    top:40px;
+    position: absolute;
+    font-size: 40px;
+    z-index: 1;
+    border-radius: 10px;
+    animation: up 1s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 normal forwards;
+}
+.mainform-collapsebutton-up {
+    background-color: rgb(255, 255, 255); 
+    cursor: pointer;
+    color:rgb(173, 148, 7);
+    left: 350px;
+    top: 250px;
+    position: absolute;
+    font-size: 40px;
+    animation: down 1s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 normal forwards;
+    border-radius: 10px;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+
+	}
+
+	100% {
+		opacity: 1;
+
+	}
+}
+
+@keyframes down {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes up {
+	0% {
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media screen and (max-width: 740px) {
+    .mainform-warning {
+        position: relative;
+        height: 44px;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        align-self: center;
+        background-color: rgb(255, 230, 87);
+        border-radius: 6px;
+        color: rgb(58, 58, 58);
+        text-align:justify;
+        z-index: 10;
+        width: 330px;
+    }
+    .mainform-warningtext {
+        width: 350px;
+    }
+    .mainform-list {
+        font-size: 14px;
+        /* padding-top: 10px; */
+        margin-inline-start: -15px;
+        list-style-type:circle;
+    }
+    .mobile-warningtext-header {
+        padding-top: 10px;
+        text-align: center;
+    }
+  }

@@ -1,0 +1,72 @@
+.text-field {
+  /* width: 100%; */
+  position: relative;
+  /* margin: 1.5px; */
+}
+
+.newlabel-form-textinput {
+  border-radius: 4px;
+  border-width: 1px;
+  border-style:solid;
+  margin: 0px 0px 5px 0px;
+  padding: 5px;
+  width: 98%;
+  height: 20px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+}
+
+.newlabel-form-textinput:focus {
+  /* border: thin solid #32cd32; */
+  background-color:#fff;
+    }
+
+.newform-textinput-label {
+  display: flex;
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 9px;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.newlabel-form-textinput:focus ~ .newform-textinput-label, .newlabel-form-textinput:valid ~ .newform-textinput-label {
+  top: -7px;
+  left: 15px;
+  font-size: small;
+  color: #0e76a8;
+  background-color:#fff;
+  padding:0 5px 0 5px;
+}
+.label-form-icon {
+  color:#5e5d5d;
+  position: absolute;
+  right: 5px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 740px) {
+  .newlabel-form-textinput {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style:solid;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+    width: 328px;
+    height: 20px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+  }
+  .label-form-icon {
+    color:#5e5d5d;
+    position: absolute;
+    right: 4px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+  }
+}
