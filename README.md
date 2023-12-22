@@ -13,8 +13,8 @@
 
 ## Screenshots
 
-<img src="main.jpg" width=45% height=45% />
-<img src="token.jpg" width=45% height=45% />
+<img src="main.jpg" width=45% height=45% /> <img src="token.jpg" width=45% height=45% />
+
 
 ## Authors
 
