@@ -7,18 +7,14 @@
 - Ready for attach file.
 - Token modal window with copy to clipboard feature(only web version)
 
-The server is ready to be deployed on free Vercel hosting.
-
 
 ## Tech Stack
 
 **Client:** TypeScript, React, Vite
 
-
 ## Authors
 
 - [@xansochi](https://www.github.com/xansochi)
-
 
 ## Feedback
 
