@@ -7,10 +7,14 @@
 - Ready for attach file.
 - Token modal window with copy to clipboard feature(only web version)
 
-
 ## Tech Stack
 
 **Client:** TypeScript, React, Vite
+
+## Screenshots
+
+<img src="main.jpg" width="800" height="610" />
+<img src="token.jpg" width="800" height="610" />
 
 ## Authors
 
