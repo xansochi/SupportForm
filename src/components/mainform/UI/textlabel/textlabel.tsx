@@ -15,8 +15,6 @@ interface Inewdata {
   setTextLabel?:any;
 }
 
-// function Textlabel ({ icon,text }:newdata):React.FC {
-// function Textlabel ({icon,text}:newdata):React.JSX.Element {
 const Textlabel: React.FC<Inewdata> = ({icon,text,setTextLabel}) => {
     function SetIcon():ReactNode {
         switch (icon) {
@@ -29,15 +27,6 @@ const Textlabel: React.FC<Inewdata> = ({icon,text,setTextLabel}) => {
     }
   return (
     <>
-    {/* <label htmlFor="people" className="form-textinput-label">
-    <input name="people" aria-label="people"
-            className="label-form-textinput"
-            placeholder={text}
-            type="text"
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTextLabel(e.target.value)}
-            />
-    <SetIcon />
-    </label> */}
     <div className="text-field">
       <input
       id="textlabel"

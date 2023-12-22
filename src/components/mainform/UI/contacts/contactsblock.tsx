@@ -63,7 +63,6 @@ function Contactsblock({setFirstname, setLastname, setPhone, setEmail}:any):Reac
             placeholder=" "
             name="email" aria-label="email"
             type="text"
-            // pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             required
             className="contactform-textinput-email"
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}

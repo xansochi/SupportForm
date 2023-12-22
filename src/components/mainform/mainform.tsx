@@ -36,11 +36,6 @@ function Mainform (): React.ReactNode {
   const { isOpen, toggle } = useModal();
 
   console.log(message, datein , dateout , people , city, action, department, firstname, lastname, phone, email);
-// function handleClick(e:any) {
-//     e.preventDefault();
-//     console.log('submit');
-//     e.target.reset();
-//   }
 const handleTextCopy = (e: React.SyntheticEvent) => {
   navigator.clipboard?.writeText(uniqForModal);
   toast('Код скопирован в буфер обмена', {
@@ -120,7 +115,7 @@ const handleSubmit = (e: React.SyntheticEvent) => {
           onClick={handleTextCopy}>Save</CiFloppyDisk>
           </div>
           <div className="modal-numblock">Пожалуйста, запишите его.</div>
-          <div className="modal-infotext">Чтобы узнать статус вашего обращения, вы можете позвонить по номеру 8-900-3003009.
+          <div className="modal-infotext">Чтобы узнать статус вашего обращения, вы можете позвонить по номеру 8-900-909090.
             <br></br>
             <br></br>
             Срок подготовки ответа обычно не превышает одного месяца. Если вы
